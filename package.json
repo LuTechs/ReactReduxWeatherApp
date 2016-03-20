@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-    "dev":"cross-env NODE_ENV=development node server.js",
+    "clean": "rimraf public",
+    "dev": "cross-env NODE_ENV=development node server.js",
     "prod": "webpack --colors --config ./webpack.config.production.js"
   },
   "author": "Leng Ung",
@@ -39,6 +40,7 @@
     "babel-preset-react-hmre": "^1.1.0",
     "css-loader": "^0.23.1",
     "extract-text-webpack-plugin": "^1.0.1",
+    "rimraf": "^2.5.2",
     "style-loader": "^0.13.0",
     "webpack": "^1.12.13",
     "webpack-dev-middleware": "^1.5.1",
