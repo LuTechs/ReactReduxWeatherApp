@@ -1,8 +1,7 @@
 var express = require('express');
 var path = require('path');
 var app = express();
-var port = 3000;
-
+var port = process.env.PORT || 8080;
 
 var isDev = process.env.NODE_ENV === 'development';
 if (isDev) {
