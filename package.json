@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "start": "node server.js"
   },
   "author": "Leng Ung",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "Webpack"
   ],
   "dependencies": {
+    "axios": "^0.9.1",
     "babel-polyfill": "^6.5.0",
     "body-parser": "^1.15.0",
     "bootstrap": "^3.3.6",
@@ -20,7 +21,12 @@
     "lodash": "^4.6.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "whatwg-fetch": "^0.11.0"
+    "react-google-maps": "^4.7.1",
+    "react-redux": "^4.4.1",
+    "react-sparklines": "^1.5.0",
+    "redux": "^3.3.1",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.0.1"
   },
   "devDependencies": {
     "babel-core": "^6.5.2",
