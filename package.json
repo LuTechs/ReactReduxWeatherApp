@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "cross-env NODE_ENV=production node server.js",
+    "dev":"cross-env NODE_ENV=development node server.js",
+    "prod": "webpack --colors --config ./webpack.config.production.js"
   },
   "author": "Leng Ung",
   "license": "MIT",
@@ -17,6 +19,7 @@
     "babel-polyfill": "^6.5.0",
     "body-parser": "^1.15.0",
     "bootstrap": "^3.3.6",
+    "cross-env": "^1.0.7",
     "express": "^4.13.4",
     "lodash": "^4.6.1",
     "react": "^0.14.7",
